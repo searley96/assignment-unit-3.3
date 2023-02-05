@@ -4,7 +4,7 @@ console.log('****** Part Supply *******');
 // 1. Create a variable called 'partsNeeded' with a value of the number 40 
 //    & console.log the variable
 console.log('1. Number of partsNeeded:');
-let partsNeeded = 40
+let partsNeeded = 40;
 console.log(partsNeeded);
 
 // 2. Create a variable call 'supplyChanges' set it to an array containing
@@ -32,6 +32,19 @@ supplyChanges.push(25);
 //    - if the value is 0, log 'No Change.'
 //    - if the value is negative, format the log as 'Removed x parts.' 
 console.log('6. Showing supplyChanges...');
+
+for(let x=0; x<supplyChanges.length; x++){
+    console.log('Showing supplyChanges..', supplyChanges[x]);
+    if(supplyChanges[x] > 0){
+    console.log('Added ' +  x + ' parts');
+    if(supplyChanges[x] == 0){ 
+    console.log('No Change.');
+    if(supplyChanges[x] < 0){
+    console.log('Removed ' + x + ' parts');
+   }
+  }
+ }
+}
 
 // STRETCH GOALS
 console.log('---  Stretch Goals  ---');
